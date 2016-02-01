@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <div style="text-align: left;">
+            
+            <form name="logform" method="POST">
+                <div style="width:75px;" > UserName:</div>
+                <div style="width:75px;" ><input  maxLength=20 size=20 name="login" id="login" value=""></div><br/>             
+                <div style="width:75px;" > Password:</div> 
+                <div style="width:75px;" ><input type=password maxLength=50 size=18 name="password" id="password" ></div><br/> `
+                <br/><br/>
+                <input onclick="sendText('REGISTER_CUSTOMER')" value="Register" type="button" >&nbsp;&nbsp;<input onclick="sendText('LOGIN_CUSTOMER')" value="Login" type="button">
+                <input type="hidden" name="sequence_id" id="sequence_id">
+
+            </form>        
+        </div>
+        <br/>
+        <br/>
+        <div id="output"></div>
+        <script type="text/javascript" src="myscript.js"></script>
+
+    </body>
+</html>
